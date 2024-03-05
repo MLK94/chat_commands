@@ -1,6 +1,6 @@
 minetest.register_chatcommand("userinfo", {
 	params = "[<name>]",
-  privs = {server=true},
+  	privs = {server=true},
 	description = "Show a user's connection details. Leave name blank for your own connection details.",
 	func = function(caller, param)
 		param = param:trim()
