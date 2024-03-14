@@ -1,1 +1,0 @@
-Just a bunch of chat commands I use on a public server. I am sure there are similar commands out there but these were written by BOLT. I unfairly credited the work of these commands to the previous server owner they came from, he had no part in this work.
