@@ -9,11 +9,9 @@ minetest.register_chatcommand("nodecount", {
         item = item + 1
       end
     end
-    local qname = minetest.get_player_by_name(name) or nil 	-- check to see if command being called from console, not in-game.
-    local pname
-    if qname then       					                          -- is the caller in-game?      
-      local pname = qname:get_player_name()
-      minetest.chat_send_player(pname,"Total number of nodes in this modpack: "..dump(item))
+    local qname = minetest.get_player_by_name(name) or nil 	-- See if the caller has a name. If not, send output to log.
+    if qname then
+      minetest.chat_send_player(qname:get_player_name(),"Total number of nodes in this modpack: "..dump(item))
     else
       minetest.log("Total number of nodes in this modpack: "..dump(item))
     end
